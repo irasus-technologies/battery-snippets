@@ -1,0 +1,6 @@
+﻿Packet_type,DeviceID,SequenceNumber,Lattitude,Longitude,Time,Date,Speed,Heading,NoOfSattelites,BMSStatus,AccelerometerMovement,IgnitionStatus,ImmobilizationStatus,Reserved,GPSOdometer,Reserved,GPSDataValidityStatus,PacketLiveOrStoredStatus,Reserved,FirmwareVersion
+TMPER,354678456723764.00,1,12.59675,77.56789,240934,301000,25.3,34,5,1,aa,0.6,1,0,13.9,1,1,0,1,1.54
+TMDTR,354678456723764.00,1,12.59675,77.56789,234507,050719,25.3,34,5,9,1,0,0,0,13.9,1,1,0,1,1.54
+TMATR,354678456723764.00,1,12.59675,77.56789,145648,060321,25.3,36,5,0,0,0,0,0,13.9,1,1,9,1,1.54
+TMPER,354678456723764.00,1,12.59675,77.56789,140934,050621,25.3,34,5,0.7,1,0,0,0,13.9,1,1,0,1,1.54
+
