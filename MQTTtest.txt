@@ -1,0 +1,54 @@
+
+%%%Electrical Pack-level Measurements%%%%
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/12345678/e/pack/m" -m "{\"iat\": \"1593383128\",\"sequence\": \"4\",\"voltage\": \"52.1\",\"current\": \"-5.0\",\"SoC\": \"88.0\",\"charge\": \"20\",\"temperature\": \"38.4\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/12345678/e/pack/m" -m "{\"iat\": \"1593383128\",\"sequence\": \"-67\",\"voltage\": \"52.1\",\"current\": \"-5.0\",\"SoC\": \"88.0\",\"charge\": \"20\",\"temperature\": \"38.4\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/12345678/e/pack/m" -m "{\"iat\": \"1593383128\",\"sequence\": \"4\",\"voltage\": \"52.1\",\"current\": \"-5.0\",\"SoC\": \"88.0\",\"charge\": \"20\",\"temperature\": \"38.4\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/12345678/e/pack/m" -m "{\"iat\": \"1593383128\",\"sequence\": \"4\",\"voltage\": \"-52.1\",\"current\": \"-5.0\",\"SoC\": \"88.0\",\"charge\": \"20\",\"temperature\": \"38.4\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/12345678/e/pack/m" -m "{\"iat\": \"1593383128\",\"sequence\": \"4\",\"voltage\": \"52.1\",\"current\": \"-5.0\",\"SoC\": \"688.0\",\"charge\": \"20\",\"temperature\": \"38.4\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/12345678/e/pack/m" -m "{\"iat\": \"1593383128\",\"sequence\": \"4\",\"voltage\": \"52.1\",\"current\": \"-5.0\",\"SoC\": \"-8.0\",\"charge\": \"20\",\"temperature\": \"38.4\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/12345678/e/pack/m" -m "{\"iat\": \"1593383128\",\"sequence\": \"4\",\"voltage\": \"52.1\",\"current\": \"-5.0\",\"SoC\": \"88.0\",\"charge\": \"20\",\"temperature\": \"-38.4\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/12345678/e/pack/m" -m "{\"iat\": \"1593383128\",\"sequence\": \"4\",\"voltage\": \"52.1\",\"current\": \"-5.0\",\"SoC\": \"88.0\",\"charge\": \"20\",\"temperature\": \"38.4\"}"
+
+
+
+%%%Electrical Pack-level Events%%%
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/123456/e/pack/e" -m "{\"iat\": \"1593383128\",\"sequence\": \"5\",\"v\": \"55.1\",\"CC\": \"60\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/123456/e/pack/e" -m "{\"iat\": \"1593383128\",\"sequence\": \"aa\",\"v\": \"55.1\",\"CC\": \"60\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/123456/e/pack/e" -m "{\"iat\": \"1593383128\",\"sequence\": \"-5\",\"v\": \"55.1\",\"CC\": \"60\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/123456/e/pack/e" -m "{\"iat\": \"1593383128\",\"sequence\": \"5\",\"v\": \"-87\",\"CC\": \"60\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/12356/e/pack/e" -m "{\"iat\": \"1593383128\",\"sequence\": \"5\",\"v\": \"78\",\"CC\": \"80\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/123456/e/pack/e" -m "{\"iat\": \"1593383128\",\"sequence\": \"5\",\"v\": \"65.1\",\"CC\": \"70\"}"
+
+
+
+%%%Electrical Cell-level Measurements%%%
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/1234567/e/cell/m" -m "{\"iat\": \"1593383128\",\"sequence\": \"11\",\"cellVoltage\": [3.7, 3.7, 4, 4.2, 4.2, 3.9, 3.8, 3.7],\"cellTemperature\": [25, 26.4, 25.8]}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/1234567/e/cell/m" -m "{\"iat\": \"1593383128\",\"sequence\": \"-11\",\"cellVoltage\": [5.7, 3.7, 4, 4.2, 4.2, 3.9, 3.8, 3.7],\"cellTemperature\": [75, 26.4, 25.8]}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/1234567/e/cell/m" -m "{\"iat\": \"1593383128\",\"sequence\": \"aa\",\"cellVoltage\": [6.7, 3.7, 4, 4.2, 4.2, 3.9, 3.8, 3.7],\"cellTemperature\": [85, 26.4, 25.8]}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/1234567/e/cell/m" -m "{\"iat\": \"1593383128\",\"sequence\": \"11\",\"cellVoltage\": [7.7, 3.7, 4, 4.2, 4.2, 3.9, 3.8, 3.7],\"cellTemperature\": [95, 26.4, 25.8]}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/1234567/e/cell/m" -m "{\"iat\": \"1593383128\",\"sequence\": \"11\",\"cellVoltage\": [8.7, 3.7, 4, 4.2, 4.2, 3.9, 3.8, 3.7],\"cellTemperature\": [56, 26.4, 25.8]}"
+
+
+
+%%%Geographical Pack-level Measurements%%%
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/12345/g/pack/m" -m "{\"iat\": \"1593383128\",\"sequence\": \"10\",\"latitude\": \"28.1\",\"longitude\": \"77.0\",\"speed\": \"88.0\",\"direction\": \"20\",\"satelliteCount\": \"15\",\"odometerReading\":\"577.45\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/12345/g/pack/m" -m "{\"iat\": \"1593383128\",\"sequence\": \"-10\",\"latitude\": \"28.1\",\"longitude\": \"77.0\",\"speed\": \"88.0\",\"direction\": \"20\",\"satelliteCount\": \"15\",\"odometerReading\":\"677.45\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/12345/g/pack/m" -m "{\"iat\": \"1593383128\",\"sequence\": \"10\",\"latitude\": \"28.1\",\"longitude\": \"77.0\",\"speed\": \"-8.0\",\"direction\": \"20\",\"satelliteCount\": \"15\",\"odometerReading\":\"777.45\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/12345/g/pack/m" -m "{\"iat\": \"1593383128\",\"sequence\": \"10\",\"latitude\": \"28.1\",\"longitude\": \"77.0\",\"speed\": \"88.0\",\"direction\": \"-80\",\"satelliteCount\": \"15\",\"odometerReading\":\"877.45\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/12345/g/pack/m" -m "{\"iat\": \"1593383128\",\"sequence\": \"10\",\"latitude\": \"28.1\",\"longitude\": \"77.0\",\"speed\": \"88.0\",\"direction\": \"520\",\"satelliteCount\": \"15\",\"odometerReading\":\"977.45\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/12345/g/pack/m" -m "{\"iat\": \"1593383128\",\"sequence\": \"10\",\"latitude\": \"28.1\",\"longitude\": \"77.0\",\"speed\": \"88.0\",\"direction\": \"20\",\"satelliteCount\": \"15\",\"odometerReading\":\"987.45\"}"
+
+
+
+%%%Geographical Pack-level Events%%%
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/123456789/g/pack/e" -m "{\"iat\": \"1593383128\",\"sequence\": \"5\",\"speed\": \"55.1\",\"SoIg\": \"1\",\"SoIm\": \"1\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/123456789/g/pack/e" -m "{\"iat\": \"1593383128\",\"sequence\": \"-5\",\"speed\": \"55.1\",\"SoIg\": \"1\",\"SoIm\": \"1\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/123456789/g/pack/e" -m "{\"iat\": \"1593383128\",\"sequence\": \"5\",\"speed\": \"-55.1\",\"SoIg\": \"1\",\"SoIm\": \"1\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/123456789/g/pack/e" -m "{\"iat\": \"1593383128\",\"sequence\": \"5\",\"speed\": \"55.1\",\"SoIg\": \"10\",\"SoIm\": \"1\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/123456789/g/pack/e" -m "{\"iat\": \"1593383128\",\"sequence\": \"5\",\"speed\": \"55.1\",\"SoIg\": \"-8\",\"SoIm\": \"1\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/123456789/g/pack/e" -m "{\"iat\": \"1593383128\",\"sequence\": \"5\",\"speed\": \"55.1\",\"SoIg\": \"1\",\"SoIm\": \"1\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/123456789/g/pack/e" -m "{\"iat\": \"1593383128\",\"sequence\": \"5\",\"speed\": \"55.1\",\"SoIg\": \"0\",\"SoIm\": \"1\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/123456789/g/pack/e" -m "{\"iat\": \"1593383128\",\"sequence\": \"5\",\"speed\": \"55.1\",\"SoIg\": \"1\",\"SoIm\": \"19\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/123456789/g/pack/e" -m "{\"iat\": \"1593383128\",\"sequence\": \"5\",\"speed\": \"55.1\",\"SoIg\": \"1\",\"SoIm\": \"-1\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/123456789/g/pack/e" -m "{\"iat\": \"1593383128\",\"sequence\": \"5\",\"speed\": \"55.1\",\"SoIg\": \"1\",\"SoIm\": \"1\"}"
+mosquitto_pub -h 2.irasus.com -p 2601 -u shagir -P shagir123 -t "/1/123456789/g/pack/e" -m "{\"iat\": \"1593383128\",\"sequence\": \"5\",\"speed\": \"55.1\",\"SoIg\": \"1\",\"SoIm\": \"0\"}"
