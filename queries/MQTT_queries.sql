@@ -109,4 +109,38 @@ BEGIN
 	END LOOP;
 END
 $BODY$;
+
+-- FUNCTION to convert epoch time to required time format
+CREATE OR REPLACE FUNCTION transactions_packs."iatToTimestamp"("iat" numeric)
+    RETURNS TIMESTAMP WITH TIME ZONE 
+    LANGUAGE 'plpgsql'
+AS $BODY$
+
+DECLARE
+
+ 	--timestamp variables
+  	_temp numeric := iat;
+	_count numeric :=0;
+	_timestamp timestamp with time zone;
+
+BEGIN
+
+ while _temp != 0 loop
+		_temp := round(_temp/10, 0)::numeric;
+		_count := _count + 1;
+	end loop;
+	
+	if _count = 10::numeric then 
+		_timestamp := to_timestamp(iat)::timestamptz(0);
+	else
+		iat := round(iat/1000, 0)::numeric;
+		_timestamp := to_timestamp(iat)::timestamptz(0);
+	end if;
+	
+	RETURN _timestamp;
+	
+END
+$BODY$;
+
+
 	
